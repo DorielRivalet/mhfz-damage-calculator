@@ -1,3 +1,5 @@
+@import url('https://unpkg.com/@catppuccin/palette@0.1.4/css/catppuccin.css');
+
 .motiontable{
 display:none;
 }
@@ -93,7 +95,8 @@ border-bottom:2px solid black;
 
 .motionvaluetable th:nth-child(1),
 .motionvaluetable th:nth-child(2){
-background-color:rgb(255,255,255,0.75);
+background-color:var(--ctp-mocha-base);
+color: var(--ctp-mocha-text);
 border-left:2px solid black;
 }
 table.motionvaluetable th:nth-child(7){
@@ -173,8 +176,8 @@ display:none;
 }
 
 .headerrow{
-background-color:black;
-color:white;
+background-color:rgb(24, 24, 37);
+color:#cdd6f4;
 font-weight:bold;
 padding-left:4px;
 }
@@ -204,7 +207,7 @@ padding-left:4px;
 }
 .headerrow.orange{
 background-color:#F69600;
-color:white;
+color:#cdd6f4;
 font-weight:bold;
 padding-left:4px;
 }
@@ -254,12 +257,16 @@ table td{
 border-bottom:none;
 border-top:none;
 }
-select { padding-left:0px;padding-right:0px; box-sizing: content-box;max-height:18px; }
-input { padding-left:2px;padding-right:0px; box-sizing: content-box;max-height:16px; }
+select { padding-left:0px;padding-right:0px; box-sizing: content-box;max-height:18px;
+background-color:var(--ctp-mocha-surface0);
+color:var(--ctp-mocha-text); }
+input { padding-left:2px;padding-right:0px; box-sizing: content-box;max-height:16px;
+background-color: var(--ctp-mocha-surface0);
+color:var(--ctp-mocha-text); }
 div.damagecalcGL{
 	border-style: solid;
 border-width: 4px;
-background-image: url(../gfx/maintile-2.png);
+background-image: url(../gfx/maintile-2_dark.png);
 -moz-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 -webkit-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 -o-border-image: url(../gfx/mainborder-1.png) 4 repeat;
@@ -312,7 +319,7 @@ cursor: hand;
 -o-transition:all 0.15s ease-in;  
 transition:all 0.15s ease-in;  
 text-decoration:underline dotted rgba(15,15,165,0.90);
-color:rgb(15,15,165);
+color:var(--ctp-mocha-blue);
 }
 
 .showmotionvalues:hover,
@@ -344,6 +351,8 @@ table td,table th{
 padding: 1px 0px 0px 2px;
 font-size: 14px;
 font-weight: normal;
+color: var(--ctp-mocha-text);
+background-color: var(--ctp-mocha-base);
 }
 
 button{
@@ -356,6 +365,8 @@ margin-right:0px;
 margin-bottom:0px;
 margin-top:0px;
 min-width:15px;
+background-color:var(--ctp-mocha-surface0);
+color:var(--ctp-mocha-text);
 }
 
 button.saveload{
@@ -518,11 +529,12 @@ text-align: center;
 box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
 border-style: solid;
 border-width: 4px;
-background-image: url(../gfx/maintile-2.png);
+background-image: url(../gfx/maintile-2_dark.png);
 -moz-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 -webkit-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 -o-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 border-image: url(../gfx/mainborder-1.png) 4 fill repeat;
+color:var(--ctp-mocha-text);
 }
 
 #closemotion{
@@ -578,7 +590,7 @@ text-align: center;
 box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.75);
 border-style: solid;
 border-width: 4px;
-background-image: url(../gfx/maintile-2.png);
+background-image: url(../gfx/maintile-2_dark.png);
 -moz-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 -webkit-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 -o-border-image: url(../gfx/mainborder-1.png) 4 repeat;
@@ -602,7 +614,7 @@ cursor: hand;
 -o-transition: all 0.15s ease-in;
 transition: all 0.15s ease-in;
 text-decoration: underline dotted rgba(15,15,165,0.90);
-color: rgb(15,15,165);
+color: var(--ctp-mocha-blue);
 }
 .showiceagecalc:hover,
 .showgunlancecalc:hover{
@@ -719,7 +731,7 @@ div.coverall{
     position:fixed;
     padding:0;
     margin:0;
-	color:white;
+	color:#cdd6f4;
 
     top:0;
     left:0;

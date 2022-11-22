@@ -1,4 +1,5 @@
 ﻿@charset "utf-8";
+@import url('https://unpkg.com/@catppuccin/palette@0.1.4/css/catppuccin.css');
 
 /* CSS Document */
 
@@ -54,9 +55,9 @@ table.centeredtable.styledtable2.smalltext tr.divadefRow td:nth-child(6){
 
 
 table.centeredtable.styledtable2.smalltext tr.divadefHeader td{
-	background-color:black;
+	background-color:rgb(24, 24, 37);
 	font-weight:900;
-	color:white;
+	color:#cdd6f4;
 	padding:0px;
 	margin:0px;
 }
@@ -870,6 +871,22 @@ table.partnerskillshtml {
 html {
 	overflow-y: scroll;
 }
+
+div::-webkit-scrollbar {
+  width: 6px !important;               /* width of the entire scrollbar */
+  height: 6px !important;
+}
+
+div::-webkit-scrollbar-track {
+  background: var(--ctp-mocha-mantle);        /* color of the tracking area */
+}
+
+div::-webkit-scrollbar-thumb {
+  background-color: var(--ctp-mocha-blue);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /* border: 3px solid orange;  creates padding around scroll thumb */
+}
+
 .footer {
 	text-align: center;
 	color: #999;
@@ -878,7 +895,7 @@ html {
 	margin-top: 2px;
 }
 a {
-	color: rgb(30, 30, 255);
+	color: var(--ctp-mocha-blue);
 }
 a:visited {
 	color: rgb(30, 30, 240);
@@ -1033,7 +1050,7 @@ overflow-y: scroll;*/
 	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.75);
 	border-style: solid;
 	border-width: 4px;
-	background-image: url(../gfx/maintile-2.png);
+	background-image: url(../gfx/maintile-2_dark.png);
 	-moz-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-webkit-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-o-border-image: url(../gfx/mainborder-1.png) 4 repeat;
@@ -1215,7 +1232,7 @@ overflow-y:auto;*/
 	margin-top: 20px;
 	border-style: solid;
 	border-width: 4px;
-	background-image: url(../gfx/maintile-2.png);
+	background-image: url(../gfx/maintile-2_dark.png);
 	-moz-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-webkit-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-o-border-image: url(../gfx/mainborder-1.png) 4 repeat;
@@ -3784,7 +3801,7 @@ p {
 .borderedgoldsmall {
 	border-style: solid;
 	border-width: 4px;
-	background-image: url(../gfx/maintile-2.png);
+	background-image: url(../gfx/maintile-2_dark.png);
 	-moz-border-image: url(../gfx/mainbordergold-1.png) 4 repeat;
 	-webkit-border-image: url(../gfx/mainbordergold-1.png) 4 repeat;
 	-o-border-image: url(../gfx/mainbordergold-1.png) 4 repeat;
@@ -3796,7 +3813,7 @@ p {
 img.bordered, video.bordered {
 	border-style: solid;
 	border-width: 4px;
-	background-image: url(../gfx/maintile-2.png);
+	background-image: url(../gfx/maintile-2_dark.png);
 	-moz-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-webkit-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-o-border-image: url(../gfx/mainborder-1.png) 4 repeat;
@@ -3866,7 +3883,7 @@ div.sidebar>ul, div.sidebar_container>ul {
 	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.75);
 	border-style: solid;
 	border-width: 4px;
-	background-image: url(../gfx/maintile-2.png);
+	background-image: url(../gfx/maintile-2_dark.png);
 	-moz-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-webkit-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-o-border-image: url(../gfx/mainborder-1.png) 4 repeat;
@@ -3885,7 +3902,7 @@ div.sidebar>ul, div.sidebar_container>ul {
 	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.75);
 	border-style: solid;
 	border-width: 4px;
-	background-image: url(../gfx/maintile-2.png);
+	background-image: url(../gfx/maintile-2_dark.png);
 	-moz-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-webkit-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-o-border-image: url(../gfx/mainborder-1.png) 4 repeat;
@@ -4607,7 +4624,7 @@ a.btn:active, a.btn:hover {
 	position: relative;
 	border-style: solid;
 	border-width: 4px;
-	background-image: url(../gfx/maintile-2.png);
+	background-image: url(../gfx/maintile-2_dark.png);
 	-moz-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-webkit-border-image: url(../gfx/mainborder-1.png) 4 repeat;
 	-o-border-image: url(../gfx/mainborder-1.png) 4 repeat;
