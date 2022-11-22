@@ -887,6 +887,21 @@ div::-webkit-scrollbar-thumb {
   /* border: 3px solid orange;  creates padding around scroll thumb */
 }
 
+::-webkit-scrollbar {
+  width: 6px !important;               /* width of the entire scrollbar */
+  height: 6px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ctp-mocha-mantle);        /* color of the tracking area */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--ctp-mocha-blue);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  /* border: 3px solid orange;  creates padding around scroll thumb */
+}
+
 .footer {
 	text-align: center;
 	color: #999;
